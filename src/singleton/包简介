@@ -1,0 +1,5 @@
+为咕泡学院单例模式练习包
+huangry -- 饿汉式包
+lazy -- 懒汉式 LazyThree 写法没懂为什么就能线程安全
+register -- 注册式  没看明白
+test -- 例子
