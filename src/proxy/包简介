@@ -1,0 +1,9 @@
+此包是个练习咕泡学院代理模式的包
+
+static_test -- 静态代理包
+  -- Father 代理类
+  -- Person 接口
+  -- Son    继承接口,被代理类
+  -- StaticProxyTest 测试静态代理
+
+ jdk -- 动态代理包 继承InvocationHandler实现
