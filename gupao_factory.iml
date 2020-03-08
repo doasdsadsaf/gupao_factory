@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="asm-5.0.4" level="project" />
+    <orderEntry type="library" name="servlet-api-2.5" level="project" />
   </component>
 </module>
