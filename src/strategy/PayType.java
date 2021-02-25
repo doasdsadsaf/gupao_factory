@@ -10,7 +10,7 @@ import strategy.payport.WechatPay;
  */
 public enum PayType {
     ALI_PAY(new AliPay()),
-    _WECHAT_PAY(new WechatPay()),
+    WECHAT_PAY(new WechatPay()),
     UNION_PAY(new UnionPay());
     private PayMoney payMoney;
     PayType(PayMoney payMoney){

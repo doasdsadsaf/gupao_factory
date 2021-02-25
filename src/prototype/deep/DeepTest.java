@@ -13,7 +13,7 @@ public class DeepTest {
         /**
          * 深复制
          */
-        // 现在还是浅复制 齐天大圣里的金箍棒是同一个 为true
+        //  齐天大圣里的金箍棒是也不是同一个了
         QiTianDaSheng qiTianDaSheng2 = new QiTianDaSheng();
         QiTianDaSheng clone2 = (QiTianDaSheng)qiTianDaSheng.deepClone();
         System.out.println(qiTianDaSheng2.getJinGuBang() == clone2.getJinGuBang());

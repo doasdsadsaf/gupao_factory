@@ -29,14 +29,13 @@ public class QiTianDaSheng extends  Monkey implements Cloneable, Serializable {
      */
     public Object deepClone() {
         try {
-            // 通过字节码读出来
+            // 通过字节码读出来 序列化
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);
             oos.writeObject(this);
-
+            // 反序列化
             ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(bis);
-
             QiTianDaSheng copy = (QiTianDaSheng) ois.readObject();
             copy.setBirthday(new Date());
             return copy;
