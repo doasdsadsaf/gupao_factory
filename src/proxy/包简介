@@ -1,4 +1,7 @@
 此包是个练习咕泡学院代理模式的包
+代理关心的是过程
+代理模式用于在每一个方法调用之前加一些代码,在方法调用之后再加一些代码
+AOP
 
 static_test -- 静态代理包
   -- Father 代理类
@@ -10,4 +13,5 @@ static_test -- 静态代理包
 
  cglib 导入cglib asm jar包实现
 
- custom -- 手写实现 感觉没什么用 因此没写
+ custom -- 手写实现
+ GPInvocationHandler

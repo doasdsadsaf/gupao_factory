@@ -30,7 +30,7 @@ public class JDKProxyTest {
      * @param args
      */
     public static void main(String[] args) throws IOException {
-        //findLoveTest();
+        findLoveTest();
         findJob();
 
         // TODO 通过反编译工具可以查看源代码
@@ -41,11 +41,12 @@ public class JDKProxyTest {
     }
 
     /**
-     * 调用找对象
+     * 调用代理找对象
      */
     private static void findLoveTest() {
-        // 代理找对象
+        // 代理找对象 用xieMu这个人去找代理
         Person object  = (Person)new JDKMeiPo().getInstance(new XieMu());
+        System.out.println(object.getClass());
         System.out.println(object);
         object.findLove();
     }

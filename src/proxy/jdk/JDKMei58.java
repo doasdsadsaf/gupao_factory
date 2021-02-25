@@ -10,11 +10,11 @@ public class JDKMei58 implements InvocationHandler {
 
     //被代理的对象,把引用给保存下来
     private Person target;
-
+    // 获取被代理对象的资料
     public Object getInstance(Person target){
         this.target = target;
         Class<?> clazz = target.getClass();
-        // 用来生成一个新的对象(字节码重组来实现)
+        // 用来生成一个新的对象(字节码重组来实现) 代理对象
         return Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
     }
 

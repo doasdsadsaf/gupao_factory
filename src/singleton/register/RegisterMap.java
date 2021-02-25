@@ -15,6 +15,7 @@ public class RegisterMap {
     // 这个是线程安全的
     private static Map<String,Object> register = new ConcurrentHashMap<>(10);
     public static RegisterMap getInstance(String name){
+        //
         if(name == null){
             name = RegisterMap.class.getName();
         }

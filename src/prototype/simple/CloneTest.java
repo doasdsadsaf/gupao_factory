@@ -15,5 +15,8 @@ public class CloneTest {
 
         Object o  = (Prototype)prototype.close();
         System.out.println(((Prototype) o).getName());
+        System.out.println(((Prototype) o).getName()==prototype.getName());
+        System.out.println(((Prototype) o).getName()=="tom");
+
     }
 }

@@ -1,5 +1,20 @@
-此包是个练习鼓泡学院工厂模式的包
+此包是个练习咕泡学院工厂模式的包
 
-simple -- 简单的工厂
+simple -- 简单的工厂 (实际应用中不存在)
+SimgleFactory里定义了一个返回Animal实现的方法,输入你想要的类名,
+里面做if判断是否有跟输入对应的类名,如果有,将他返回
+
 funt -- 稍微复杂点的工厂
+定义一个工厂接口Animal, DogFactory和CatFactory 实现Animal.
+使用Dog和Cat时,new Dog/Cat 向上转型,得到new的类调用里面的方法
 abstr -- 最复杂的工厂模式 抽象工厂
+定义一个抽象工厂 AbstractFactory,定义获取 Dog, Cat的抽象方法,使用Animal接收(子类向上转型)
+AnimalFactory 继承 AbstractFactory,实现Dog,Cat方法,返回Dog,Cat对象
+优点:对用户而言,更加简单,用户只有选择的权利
+
+
+
+
+
+
+

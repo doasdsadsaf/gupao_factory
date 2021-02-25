@@ -8,6 +8,7 @@ import java.io.IOException;
 /**
  * Created by Tom on 2018/3/10.
  */
+// 代码生成、编译、重新动态load到JVM
 public class GPClassLoader extends ClassLoader{
 
     private File classPathFile;

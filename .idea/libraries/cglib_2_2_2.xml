@@ -1,7 +1,6 @@
 <component name="libraryTable">
-  <library name="asm-5.0.4">
+  <library name="cglib-2.2.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/asm-5.0.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/cglib-2.2.2.jar!/" />
     </CLASSES>
     <JAVADOC />

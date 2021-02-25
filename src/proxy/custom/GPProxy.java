@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 
 /**
  * Created by Tom on 2018/3/10.
+ * 生成代理对象的代码
  */
 public class GPProxy {
 
@@ -23,9 +24,11 @@ public class GPProxy {
            String src = generateSrc(interfaces);
 
            //2、Java文件输出磁盘
-           String filePath = GPProxy.class.getResource("").getPath();
+
+           String filePath = GPProxy.class.getResource("").getPath().replaceAll("%20"," ");
            System.out.println(filePath);
            File f = new File(filePath + "$Proxy0.java");
+           f.createNewFile();
            FileWriter fw = new FileWriter(f);
            fw.write(src);
            fw.flush();
@@ -56,8 +59,8 @@ public class GPProxy {
     private static String generateSrc(Class<?>[] interfaces){
 
             StringBuffer sb = new StringBuffer();
-            sb.append("package com.gupaoedu.vip.pattern.proxy.custom;" + ln);
-            sb.append("import com.gupaoedu.vip.pattern.proxy.staticed.Person;" + ln);
+            sb.append("package proxy.custom;" + ln);
+            sb.append("import proxy.static_test.Person;" + ln);
             sb.append("import java.lang.reflect.Method;" + ln);
             sb.append("public class $Proxy0 implements " + interfaces[0].getName() + "{" + ln);
 

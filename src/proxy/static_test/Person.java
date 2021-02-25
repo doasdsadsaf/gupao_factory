@@ -13,4 +13,7 @@ public interface Person {
 
     public void findJob();
 
+    String getSex();
+    String getAge();
+
 }

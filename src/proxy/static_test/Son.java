@@ -25,4 +25,14 @@ public class Son implements Person{
 
     }
 
+    @Override
+    public String getSex() {
+        return null;
+    }
+
+    @Override
+    public String getAge() {
+        return null;
+    }
+
 }

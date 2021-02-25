@@ -12,7 +12,7 @@ public class CglibMeipo implements MethodInterceptor {
         Enhancer enhancer = new Enhancer();
         // 要把哪个类设置为即将生成的新父类
         enhancer.setSuperclass(clazz);
-
+        // 设置回调
         enhancer.setCallback(this);
         return enhancer.create();
     }
@@ -20,9 +20,9 @@ public class CglibMeipo implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         // 对业务的增强
-        System.out.println("我是媒婆");
+        System.out.println("我是ccc");
         methodProxy.invokeSuper(o,objects);
-        System.out.println("如果合适就准备办事");
+        System.out.println("如果ccc");
         return o;
     }
 }

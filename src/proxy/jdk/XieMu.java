@@ -27,4 +27,14 @@ public class XieMu implements Person {
         System.out.println("月薪13-15K");
         System.out.println("找工作");
     }
+
+    @Override
+    public String getSex() {
+        return "";
+    }
+
+    @Override
+    public String getAge() {
+        return "";
+    }
 }
