@@ -1,0 +1,17 @@
+为泛型理解练习包
+
+TestOne: 类上定义泛型<>,方法上定义泛型
+
+TestTwo: 接口上定义泛型
+
+TestTwoImpl: 实现TestTwo 子类明确泛型类的类型参数变量
+
+TestTwoImpl2: 实现TestTwo 子类不明确泛型类的类型参数变量
+
+TestTwoImpl2.list list集合装载的元素只能是String的子类或自身 限定下限
+
+TestTwoImpl2.lis2t list集合装载的元素只能是Integer的父类或自身 限定上限
+
+
+
+
